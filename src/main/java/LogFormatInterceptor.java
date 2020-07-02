@@ -75,7 +75,7 @@ public class LogFormatInterceptor implements Interceptor {
 
         SimpleEvent simpleEvent = new SimpleEvent();
 
-        String eventString = new String("10.1.6.44 - [07/Aug/2019:13:59:56 +0800] \"GET /jyx-xxkj/conver/conver!getJyxFileList.action?fileExtName=DOC,XLS,DOCX,XLSX,PDF,TXT&fetchNum=1000 HTTP/1.1\" 200 2 \"-\" 2.083 \"2.083\" \"Apache-HttpClient/4.3.5 (java 1.5)\" \"-\" \"10.1.6.78:9030\" \"xxkj.12study.cn\":\"80\" \"Lang-Code=zh\" log_nginx_k12");
+        String eventString = new String("119.137.55.196 - [26/Dec/2019:18:27:37 +0800] \"POST /apis/courseStudyProcess/ksxx HTTP/1.1\" 200 85 \"http://daxue.zhishiditu.net/\" 0.089 \"0.088\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36\" \"119.137.55.196\" \"10.1.8.220:8673\" \"daxue.zhishiditu.net\":\"80\" \"p_h5_u=98CF8619-243D-4F34-8F7D-92D7FBBA5124; selectedStreamLevel=LD; SESSION=OTA5MjU5YjItYTgzZi00MmRjLWE4NjQtY2YzMWVkNjdkMWU3\" log_nginx_vocational");
         try {
             simpleEvent.setBody(eventString.getBytes("UTF-8"));
         } catch (UnsupportedEncodingException e) {
